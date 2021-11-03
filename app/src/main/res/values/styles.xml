@@ -18,4 +18,14 @@
         <item name="android:textColor">#cdcdcd</item>
     </style>
 
+    <!-- Basic Color Button -->
+    <style name="Button.Basic" parent="ThemeOverlay.AppCompat">
+        <item name="colorAccent">@android:color/holo_green_dark</item>
+    </style>
+
+    <!-- White Color Button -->
+    <style name="Button.White" parent="ThemeOverlay.AppCompat">
+        <item name="colorAccent">@android:color/white</item>
+    </style>
+
 </resources>
