@@ -4,19 +4,101 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/background"
-    tools:context=".MainActivity">
+    android:background="@color/basic"
+    tools:context=".LanguageSelect">
+
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/Text.TitleStyle"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/bottomLayout"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="15dp"
+        android:text="Choose a Theme"/>
+
+    <TextView
+        android:id="@+id/context"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        style="@style/Text.ContextStyle"
+        app:layout_constraintTop_toBottomOf="@+id/title"
+        app:layout_constraintBottom_toTopOf="@id/bottomLayout"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintVertical_bias="0.1"
+        android:layout_marginLeft="15dp"
+        android:text="The theme you choose will be the main topic for the questionsyou'll attempt! "/>
+
 
     <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/bottomLayout"
         android:layout_width="match_parent"
-        android:layout_height="400dp"
+        android:layout_height="390dp"
         app:layout_constraintVertical_bias="1"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         android:background="@drawable/bottom_round_style">
 
 
+        <LinearLayout
+            android:id="@+id/theme_container"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/bottomLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_height="wrap_content">
+                <Button
+                    android:paddingTop="30dp"
+                    android:drawableTop="@drawable/solar"
+                    android:text="Solar\n Energe"
+                    android:background="@drawable/rect_style"
+                    android:layout_marginRight="7dp"
+                    android:id="@+id/theme_solar"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"/>
+                <Button
+                    android:paddingTop="10dp"
+                    android:drawableTop="@drawable/hydroelectric"
+                    android:text="Hydroeletric\n Energe"
+                    android:layout_marginLeft="7dp"
+                    android:id="@+id/theme_hydro"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:background="@drawable/rect_style"/>
+            </LinearLayout>
 
+            <LinearLayout
+                android:gravity="center"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <Button
+                    android:paddingTop="15dp"
+                    android:drawableTop="@drawable/wind"
+                    android:text="Wind\n Energy"
+                    android:background="@drawable/rect_style"
+                    android:layout_marginRight="7dp"
+                    android:id="@+id/theme_wind"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"/>
+                <Button
+                    android:drawableTop="@drawable/geothermal"
+                    android:text="Geothermal\n energy"
+                    android:layout_marginLeft="7dp"
+                    android:id="@+id/theme_geo"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:background="@drawable/rect_style"/>
+            </LinearLayout>
+        </LinearLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>
-
 </androidx.constraintlayout.widget.ConstraintLayout>
