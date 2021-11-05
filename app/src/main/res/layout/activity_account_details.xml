@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/basic"
-    tools:context=".CreateAccount">
+    tools:context=".AccountDetails">
 
 
     <TextView
@@ -18,7 +18,7 @@
         app:layout_constraintBottom_toTopOf="@+id/bottomLayout"
         app:layout_constraintLeft_toLeftOf="parent"
         android:layout_marginLeft="15dp"
-        android:text="Before You Begin"/>
+        android:text="Account Details"/>
 
     <TextView
         android:id="@+id/context"
@@ -28,9 +28,9 @@
         app:layout_constraintTop_toBottomOf="@+id/title"
         app:layout_constraintBottom_toTopOf="@id/bottomLayout"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintVertical_bias="0.5"
+        app:layout_constraintVertical_bias="0.1"
         android:layout_marginLeft="15dp"
-        android:text="Create a username and choose an avatar to begin!"/>
+        android:text="This is where you can gain key infoabout your account and customizeit!"/>
 
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -53,12 +53,12 @@
             app:layout_constraintBottom_toTopOf="@+id/editText"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="parent"></ImageView>
+            app:layout_constraintTop_toTopOf="parent"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Choose Avatar"
+            android:text="Change Avatar"
             android:textColor="@color/white"
             android:textSize="18sp"
             app:layout_constraintBottom_toBottomOf="@+id/select_avatar"
@@ -84,7 +84,7 @@
             android:layout_height="50dp"
             android:layout_marginBottom="10dp"
             android:background="@drawable/btn_round_style"
-            android:text="CONTINUE"
+            android:text="Change info"
             android:textColor="@color/white"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
