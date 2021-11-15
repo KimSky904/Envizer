@@ -28,7 +28,7 @@
         app:layout_constraintTop_toBottomOf="@+id/title"
         app:layout_constraintBottom_toTopOf="@id/bottomLayout"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintVertical_bias="0.5"
+        app:layout_constraintVertical_bias="0.1"
         android:layout_marginLeft="15dp"
         android:text="Create a username and choose an avatar to begin!"/>
 

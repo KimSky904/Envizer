@@ -13,11 +13,12 @@
         <entry key="..\:/AndroidProject/Envizer/app/src/main/res/drawable/edittext_round_style.xml" value="0.31666666666666665" />
         <entry key="..\:/AndroidProject/Envizer/app/src/main/res/drawable/rect_style.xml" value="0.31666666666666665" />
         <entry key="..\:/AndroidProject/Envizer/app/src/main/res/font/app_font.xml" value="0.37447916666666664" />
+        <entry key="..\:/AndroidProject/Envizer/app/src/main/res/layout/activity_account_details.xml" value="0.18" />
         <entry key="..\:/AndroidProject/Envizer/app/src/main/res/layout/activity_avatar_selection.xml" value="0.22" />
-        <entry key="..\:/AndroidProject/Envizer/app/src/main/res/layout/activity_create_account.xml" value="0.2986111111111111" />
+        <entry key="..\:/AndroidProject/Envizer/app/src/main/res/layout/activity_create_account.xml" value="0.25" />
         <entry key="..\:/AndroidProject/Envizer/app/src/main/res/layout/activity_language_select.xml" value="0.25" />
         <entry key="..\:/AndroidProject/Envizer/app/src/main/res/layout/activity_main.xml" value="0.23505434782608695" />
-        <entry key="..\:/AndroidProject/Envizer/app/src/main/res/layout/activity_result_screen.xml" value="0.22" />
+        <entry key="..\:/AndroidProject/Envizer/app/src/main/res/layout/activity_result_screen.xml" value="0.16" />
         <entry key="..\:/AndroidProject/Envizer/app/src/main/res/layout/activity_solving_quiz.xml" value="0.25" />
         <entry key="..\:/AndroidProject/Envizer/app/src/main/res/layout/activity_splash_screen.xml" value="0.23505434782608695" />
         <entry key="..\:/AndroidProject/Envizer/app/src/main/res/layout/activity_theme_selection.xml" value="0.25" />
