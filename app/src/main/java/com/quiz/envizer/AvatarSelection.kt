@@ -12,5 +12,7 @@ class AvatarSelection : AppCompatActivity() {
 
 
 
+
+
     }
 }

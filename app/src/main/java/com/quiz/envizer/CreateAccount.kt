@@ -1,8 +1,6 @@
 package com.quiz.envizer
 
-import android.content.DialogInterface
 import android.content.Intent
-import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.text.Editable
@@ -12,8 +10,6 @@ import android.view.View
 import android.view.animation.AnimationUtils
 import android.widget.Button
 import android.widget.EditText
-import android.widget.ImageView
-import androidx.appcompat.app.AlertDialog
 import androidx.constraintlayout.widget.ConstraintLayout
 
 class CreateAccount : AppCompatActivity() {
@@ -57,6 +53,7 @@ class CreateAccount : AppCompatActivity() {
         btn_continue.setOnClickListener {
             val intent = Intent(this,CreateAvatar::class.java)
             startActivity(intent)
+            overridePendingTransition(0, 0)
             finish()
         }
 

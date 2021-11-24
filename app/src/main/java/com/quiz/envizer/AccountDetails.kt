@@ -8,5 +8,8 @@ class AccountDetails : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_account_details)
 
+
+        //username 수정, avatar변경 기능
+
     }
 }

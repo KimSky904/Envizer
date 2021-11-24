@@ -3,8 +3,11 @@ package com.quiz.envizer
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
+import android.view.animation.AnimationUtils
 import android.widget.Button
 import android.widget.ImageView
+import androidx.constraintlayout.widget.ConstraintLayout
 import org.json.JSONException
 import org.json.JSONObject
 
@@ -12,6 +15,11 @@ class SolvingQuiz : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_solving_quiz)
+        //bottom page animation
+        val bottom_animation = AnimationUtils.loadAnimation(applicationContext,R.anim.translate_up)
+        var bottomPage = findViewById<ConstraintLayout>(R.id.bottomLayout)
+        bottomPage.setVisibility(View.VISIBLE);
+        bottomPage.startAnimation(bottom_animation)
 
 
 
@@ -35,15 +43,12 @@ class SolvingQuiz : AppCompatActivity() {
 
         val btn_previous = findViewById<ImageView>(R.id.btn_previous);
         val btn_next = findViewById<ImageView>(R.id.btn_next);
-        btn_previous.setOnClickListener {
-            val intent = Intent(this,ThemeSelection::class.java)
-            startActivity(intent)
-            finish()
-        }
+        btn_previous.setOnClickListener {        }
         btn_next.setOnClickListener {
             //사용자 선택값 json -> server로 전달
             val intent = Intent(this,ResultScreen::class.java)
             startActivity(intent)
+            overridePendingTransition(0, 0)
             finish()
         }
 
