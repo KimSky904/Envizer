@@ -30,7 +30,7 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintVertical_bias="0.1"
         android:layout_marginLeft="15dp"
-        android:text="Create a username or find your accounts before you begin!"/>
+        android:text="Check your avatars and Choose an avatar to begin!"/>
 
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -44,36 +44,40 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1">
 
-
-        <EditText
-            android:id="@+id/editText"
-            android:layout_width="320dp"
-            android:layout_height="60dp"
-            android:selectAllOnFocus="true"
-            android:clickable="false"
-            android:maxLines="1"
-            android:maxLength="10"
-            android:background="@drawable/edittext_round_style"
-            android:hint="Enter Username"
-            android:paddingStart="15dp"
-            android:layout_marginTop="60dp"
+        <ImageView
+            android:id="@+id/select_avatar"
+            android:layout_width="170dp"
+            android:layout_height="170dp"
+            android:layout_marginBottom="6dp"
+            android:background="@drawable/circle_style"
             app:layout_constraintBottom_toTopOf="@+id/btn_continue"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/bottomLayout" />
+            app:layout_constraintTop_toTopOf="parent"></ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Choose Avatar"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/select_avatar"
+            app:layout_constraintLeft_toLeftOf="@+id/select_avatar"
+            app:layout_constraintRight_toRightOf="@+id/select_avatar"
+            app:layout_constraintTop_toTopOf="@+id/select_avatar" />
 
         <Button
             android:id="@+id/btn_continue"
             android:layout_width="250dp"
             android:layout_height="50dp"
+            android:layout_marginBottom="10dp"
             android:background="@drawable/btn_round_style"
             android:text="CONTINUE"
-            android:layout_marginTop="20dp"
             android:textColor="@color/white"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/editText" />
+            app:layout_constraintTop_toBottomOf="@+id/select_avatar" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -10,17 +10,14 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Envizer">
         <activity
+            android:name=".CreateAvatar"
+            android:exported="false" />
+        <activity
             android:name=".AccountDetails"
             android:exported="true" />
         <activity
             android:name=".CreateAccount"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+            android:exported="true" />
         <activity
             android:name=".AvatarSelection"
             android:exported="true" />
@@ -38,7 +35,13 @@
             android:exported="true" />
         <activity
             android:name=".SplashScreen"
-            android:exported="true" />
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>
