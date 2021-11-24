@@ -20,6 +20,11 @@ class CreateAccount : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_create_account)
+        //bottom page animation
+        val bottom_animation = AnimationUtils.loadAnimation(applicationContext,R.anim.translate_up)
+        var bottomPage = findViewById<ConstraintLayout>(R.id.bottomLayout)
+        bottomPage.setVisibility(View.VISIBLE);
+        bottomPage.startAnimation(bottom_animation)
 
         val edittxt_username = findViewById<EditText>(R.id.editText)
         val btn_continue = findViewById<Button>(R.id.btn_continue)
