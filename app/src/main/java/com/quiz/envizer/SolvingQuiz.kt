@@ -21,6 +21,9 @@ class SolvingQuiz : AppCompatActivity() {
         bottomPage.setVisibility(View.VISIBLE);
         bottomPage.startAnimation(bottom_animation)
 
+        //apply avatar
+        val btn_change_avatar = findViewById<ImageView>(R.id.btn_change_avatar)
+        //아바타도 받아와야하나?
 
 
         val themeValue = intent.getIntExtra("themeValue",1)

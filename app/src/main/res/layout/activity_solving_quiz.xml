@@ -5,8 +5,19 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/basic"
-    tools:context=".LanguageSelect">
+    tools:context=".SolvingQuiz">
 
+    <ImageView
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/imv_avatar"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/btn_round_style"
+        android:backgroundTint="@color/lightGray"/>
 
     <TextView
         android:id="@+id/title"

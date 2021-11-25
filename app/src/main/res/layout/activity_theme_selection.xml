@@ -5,8 +5,19 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/basic"
-    tools:context=".LanguageSelect">
+    tools:context=".ThemeSelection">
 
+    <ImageView
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/btn_change_avatar"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/btn_round_style"
+        android:backgroundTint="@color/lightGray"/>
 
     <TextView
         android:layout_marginTop="-10dp"
@@ -58,6 +69,7 @@
                 android:layout_marginBottom="10dp"
                 android:layout_height="wrap_content">
                 <Button
+                    android:onClick="onClick"
                     android:paddingTop="30dp"
                     android:drawableTop="@drawable/solar"
                     android:text="Solar\n Energe"
@@ -67,6 +79,7 @@
                     android:layout_width="150dp"
                     android:layout_height="150dp"/>
                 <Button
+                    android:onClick="onClick"
                     android:paddingTop="10dp"
                     android:drawableTop="@drawable/hydroelectric"
                     android:text="Hydroeletric\n Energe"
@@ -83,6 +96,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
                 <Button
+                    android:onClick="onClick"
                     android:paddingTop="15dp"
                     android:drawableTop="@drawable/wind"
                     android:text="Wind\n Energy"
@@ -92,6 +106,7 @@
                     android:layout_width="150dp"
                     android:layout_height="150dp"/>
                 <Button
+                    android:onClick="onClick"
                     android:drawableTop="@drawable/geothermal"
                     android:text="Geothermal\n energy"
                     android:layout_marginLeft="7dp"
